@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=cod\ desc
+comment1.target=Produto(int,\ java.lang.String)
+comment10.params=qtd
+comment10.target=void\ estornaBaixaEstoque(int)
+comment2.params=
+comment2.target=int\ getCodigo()
+comment3.params=
+comment3.target=java.lang.String\ getDescricao()
+comment4.params=
+comment4.target=double\ getPreco()
+comment5.params=
+comment5.target=int\ getSaldo()
+comment6.params=
+comment6.target=int\ getPontoDeAlarme()
+comment7.params=
+comment7.target=boolean\ getEmFalta()
+comment8.params=qtd\ precoCompra
+comment8.target=boolean\ abastece(int,\ double)
+comment9.params=qtd
+comment9.target=int\ baixaEstoque(int)
+numComments=11

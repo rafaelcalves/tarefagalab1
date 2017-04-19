@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Cliente
+comment1.params=nomeCli
+comment1.target=Cliente(java.lang.String)
+comment2.params=nomeCliente
+comment2.target=java.lang.String\ defineCodigo(java.lang.String)
+comment3.params=valorFinal
+comment3.target=void\ registraPedido(double)
+comment4.params=
+comment4.target=java.lang.String\ getCodigoID()
+comment5.params=
+comment5.target=java.lang.String\ getNome()
+comment6.params=
+comment6.target=double\ getValorMaiorCompra()
+comment7.params=
+comment7.target=double\ getValorSegMaiorCompra()
+comment8.params=
+comment8.target=int\ getQtdPedidosFeitos()
+numComments=9
