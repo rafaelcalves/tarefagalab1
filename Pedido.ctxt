@@ -1,10 +1,16 @@
 #BlueJ class context
-comment0.target=Pedido
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pedido\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Pedido()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pedido\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment0.params=numPed\ cli
+comment0.target=Pedido(int,\ Cliente)
+comment1.params=numeroPed
+comment1.target=Pedido(int)
+comment2.params=pro\ qtd
+comment2.target=java.lang.String\ insereProduto(Produto,\ int)
+comment3.params=
+comment3.target=java.lang.String\ fechaPedido()
+comment4.params=
+comment4.target=boolean\ enviaParaEntrega()
+comment5.params=
+comment5.target=void\ exibePedido()
+comment6.params=
+comment6.target=boolean\ cancelaPedido()
+numComments=7
