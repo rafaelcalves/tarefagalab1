@@ -42,6 +42,10 @@ public class Pedido {
         this.valorFinal = 0;
         this.situacao = 1;        
     }
+    
+    public void setCliente(Cliente cli){
+        this.cliente = cli;
+    }
 //Método para inserir um produto
     public String insereProduto(Produto pro, int qtd){
 //Verifica se a situação é de pedido aberto
@@ -123,6 +127,10 @@ public class Pedido {
         if (this.quant1 == 0){
             return "Não pode fechar pedido sem pelo menos um produto";
         }
+//Testa se existe cliente cadastrado #nullPointer
+        if (this.cliente == null){
+            return "Não é possível fechar o pedido pois não existe um cliente cadastrado";
+        }
 //Verifica se pode haver desconto no pedido
         if ((this.valorTotal > 500) && (cliente.getQtdPedidosFeitos() >= 2)){
 //Desconto de 5% se o pedido apresentar um valor superior a maior compra do cliente            
@@ -154,10 +162,10 @@ public class Pedido {
 //Método para exibir o pedido
     public void exibePedido(){
         if (quant1 == 0){
-            System.out.printf("Pedido número: "+this.numero+"\nPedido sem nenhum item incluído");
+            System.out.printf("\n\nPedido número: "+this.numero+"\nPedido sem nenhum item incluído");
         }else{   
         int seq = 1;
-        System.out.printf("Pedido núm "+this.numero);
+        System.out.printf("\n\nPedido núm "+this.numero);
         if (cliente != null){
             System.out.printf("\t\t\t\t\tNome do cliente: "+cliente.getNome());
         }
@@ -200,7 +208,7 @@ public class Pedido {
             default:
                 sit = "inválido";
         }
-        System.out.printf("\nSituação: "+sit);        
+        System.out.printf("\nSituação: "+sit + "\n\n");        
     }
     }
 //Método para cancelar pedido
